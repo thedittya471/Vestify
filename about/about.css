@@ -57,7 +57,7 @@ body {
   background-color: #e68900;
 }
 
-/* About Header */
+/* about header section  */
 .about-header {
   text-align: center;
   padding: 60px 20px 40px;
@@ -304,9 +304,7 @@ h1 {
   margin-top: 10px;
 }
 
-/* Responsive Design */
-
-/* Tablets */
+/* Tablet */
 @media (max-width: 768px) {
   .navbar {
     padding: 12px 20px;
