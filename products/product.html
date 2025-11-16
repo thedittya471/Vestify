@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Your Company</title>
+    <link rel="stylesheet" href="product.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Vestify</div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="product.html">Services</a></li>
+            <li><a href="../support/support.html">Support</a></li>
+        </ul>
+
+        <button class="signup-btn" onclick="window.location.href='../SignUp/signUp.html'">Sign Up</button>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <h1>Our Products</h1>
+        <p>
+            Simple, powerful, and reliable products that make trading and investing easier.
+        </p>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+
+        <div class="product-card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX////2RhrbNCz1OAD6qpvso6DZIhj4RxjvRSXZIBTZNC78z8b2LAD80Mf2OgD4f2nkdnL4e2P4gGnkcW36ppj6oZL1JgD3c1z/+Pb+7OfyWT7XJiDsNgfXAADiamX81M3rmpf1zcxHxpeOAAACbElEQVR4nO2dCU4CQRBFR0YdlMV9RUXvf0k1xqgRhlm6f3UV793gpfr3rwYSqgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgrO+PrTgZqESnC1rC27v7lWCdXNgQH0m8qsWcws/oWD8CS5tBC9UgrN59AkaZVA3QaMjqpug0SUjm+AiegapCe+C1EQmQWoiFeFrggxmEiSDqbDKoPCI2gheqgRZ1bwLUhPeBeNnMLxg9AzOags/pWD0mtiDDFr4URPpYFXLJKh7TfCizyPIJZNMMH5NRBcMn8Hwr4n4GQw+Qb58ySTIqpZMMHxNRL9k9qAmoguGzyCrmnfB8LdoeMHwGaQmsrCUCT7YHNHmUSVoNMNmujoXKupz2ExPJydKRfVB/RScaBW1ffgl+KF4FVTxW1A8Rd1e+iOoVhRN8begWFFTGn8F1deNgWC4LP4XDFYamwRDZXGzYKCDuk1QXP35SmO7YJAstgmGWODaBQNkcZeg+wVut6Dz0ugi6HqB6yboOItdBd2WRndBp1nsI+jyoPYTdLjA9RXUTjHB77z7Czpb4IYIiqc4LovDBB2VxlBBN6UxXNDJAjdG0MVLY5yggyyOFSxecbxg4QtcCsGiF7g0ggUvcKkEi81iOsFCs5hSsMgpphUscIFLLVjcQU0vWFhp5BAUl0Z7FvMIiqfYlsVcgsW8+vMJFpLFnIJFlEZeQfUncAaC5gc1v6BxaSgETUtDI2i4wKkEzbKoEzR69SsFTb620QoaLHBqQfkU9YLqBe5pdazn+UX1X0FVtT4y4fVNZggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI3gHMZFmvm1YbhgAAAAASUVORK5CYII="
+                alt="Kite" />
+            <div class="card-content">
+                <h2>Kite</h2>
+                <p>
+                    A sleek, powerful trading platform for modern investors. Charting, insights, and trading—all in one
+                    place.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/png;base64,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"
+                alt="Console" />
+            <div class="card-content">
+                <h2>Console</h2>
+                <p>
+                    The central dashboard for your portfolio. Track performance, view reports, and manage your holdings.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/png;base64,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"
+                alt="Coin" />
+            <div class="card-content">
+                <h2>Coin</h2>
+                <p>
+                    Invest in mutual funds directly without commissions. Your funds stay in your own Demat account.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/jpeg;base64,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"
+                alt="Varsity" />
+            <div class="card-content">
+                <h2>Varsity</h2>
+                <p>
+                    Learn trading and investing from scratch. Free, in-depth modules designed for everyone.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/jpeg;base64,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"
+                alt="Sentinel" />
+            <div class="card-content">
+                <h2>Sentinel</h2>
+                <p>
+                    Create market alerts on stocks, futures, and options. Get notified instantly across platforms.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/png;base64,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"
+                alt="Streak" />
+            <div class="card-content">
+                <h2>Streak</h2>
+                <p>
+                    Backtest and deploy trading strategies without coding. Automate your trading with ease.
+                </p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Explore our ecosystem</h2>
+        <p>Built for traders. Trusted by millions.</p>
+        <a href="#" class="cta-button">Get started</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>YourBrand</h2>
+                <p>
+                    Building seamless experiences for the next generation of creators
+                    and investors.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Platform</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" /></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" /></a>
+            </div>
+            <p>© 2025 YourBrand. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
