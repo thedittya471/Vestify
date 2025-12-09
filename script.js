@@ -41,13 +41,6 @@ for (var i = 0; i < images.length; i++) {
 }
 
 
-// current year for footer
-var yearElement = document.getElementById('current-year');
-if (yearElement) {
-    var currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-}
-
 // Footer links color change
 var footerLinks = document.querySelectorAll('footer a');
 for (var i = 0; i < footerLinks.length; i++) {

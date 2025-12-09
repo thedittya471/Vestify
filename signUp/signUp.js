@@ -1,10 +1,3 @@
-// Get current year for footer
-var yearElement = document.getElementById('current-year');
-if (yearElement) {
-    var currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-}
-
 // Form submission
 var loginForm = document.querySelector('form');
 if (loginForm) {
@@ -13,28 +6,27 @@ if (loginForm) {
         
         var userId = document.getElementById('userId').value;
         var password = document.getElementById('password').value;
-        
+
+
         if (userId === '' || password === '') {
             alert('Please fill in all fields!');
-            return;
         }
-        
-        if (userId.length < 3) {
+        else if (userId.length < 3) {
             alert('Client ID must be at least 3 characters!');
-            return;
         }
         
-        if (password.length < 6) {
-            alert('Password must be at least 6 characters!');
-            return;
+        else if (password.length < 6) {
+            alert('Password must be at least 6 characters!'); 
+        }
+        else  {
+            alert('Login successful! Welcome ' + userId);
+            console.log('User logged in: ' + userId);
+
+            setTimeout(function() {
+             window.location.href = '../index.html';
+            }, 1000);
         }
 
-        alert('Login successful! Welcome ' + userId);
-        console.log('User logged in: ' + userId);
-
-        setTimeout(function() {
-            window.location.href = '../index.html';
-        }, 1000);
     });
 }
 

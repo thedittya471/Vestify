@@ -26,14 +26,6 @@ for (var i = 0; i < paragraphs.length; i++) {
     });
 }
 
-// Get current year for footer
-var yearElement = document.getElementById('current-year');
-if (yearElement) {
-    var currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-}
-
-
 // navbar
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
